@@ -12,11 +12,6 @@
   font-family: 'icomoon' !important
 }
 
-.header {
-  display: block;
-  background: white;
-}
-
 .headerImage {
   position: relative;
   top: 3%;
@@ -62,18 +57,11 @@
 
 .content {
   width: 100%;
-  height: 100%;
   background-image: url('sample_mtfuji.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
-  position: fixed;
-  bottom: 0;
-  top: 20%;
-}
-
-.content .center {
+  position: relative;
   padding: 10% 30%;
-  margin: 0 auto;
 }
 
 .content .title {
@@ -97,13 +85,6 @@
   margin-bottom: 4%;
 }
 
-.content .images {
-  margin-top: 20%;
-  text-align: center;
-}
+/* @media screen and (max-width: 600px) and (min-width: 400px) { */
 
-.content img {
-  padding: 2%;
-  width: 7%;
-  height: 7%;
-}
+/* li { */
