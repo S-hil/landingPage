@@ -10,8 +10,10 @@
   padding: 0px;
   margin: 0px;
   font-family: 'icomoon' !important;
-
+  max-width: 100%;
+  overflow-x: hidden;
 }
+
 .seo {
   position: absolute;
   height: 0;
@@ -20,8 +22,6 @@
   font-size: 0;
   text-indent: -999%;
 }
-
-
 
 .header {
   text-align: center;
@@ -32,40 +32,40 @@
 .logo {
   fill: #fff;
   width: 90%;
-  width: 400px;
   height: 100px;
 }
 
-
-
 .content {
-max-width: 400px;
-min-height: 300px;
-max-height: 300px;
- background-image: url('sample_mtfuji.jpeg');
+  max-width: 400px;
+  min-height: 300px;
+  max-height: 300px;
+  background-image: url('sample_mtfuji.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   padding: 10% 10%;
 }
 
-.content .center{
+.content .center {
   color: white;
   text-align: center;
-  margin:10% auto;
-
+  margin: 10% auto;
 }
 
-.content .text{
+.content .text {
   display: block;
 }
-span{
+
+span {
   display: block;
-  padding:5%;
+  padding: 5%;
   font-size: 1.5em;
   letter-spacing: 0.3em;
 }
-span.title{font-size: 2em;}
+
+span.title {
+  font-size: 2em;
+}
 
 html {
   font-size: 16px;
@@ -74,7 +74,6 @@ html {
 body {
   background-color: #00003B;
 }
-
 
 .footer {
   z-index: 100;
@@ -87,23 +86,57 @@ body {
   padding: 2%;
   width: 9%;
   height: 10%;
-  fill:white;
+  fill: white;
 }
 
 @media screen and (min-width: 500px) {
   body {
     background-color: #fff;
   }
+  .header {
+    margin 0 auto;
+    z-index: 2;
+  }
   .logo {
     fill: #00003B;
     max-width: 20rem;
   }
+  /*Everything works uptil now*/
   .content {
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    background-size: 100% 100%;
+    background-position: center bottom;
+  }
+  .content {
+    width: 100%;
+    max-width: 2500px;
+    min-width: 1000px;
+    min-height: 50px;
+    max-height: 40%;
+    height: 60%;
+    overflow: hidden;
+    /* max-height: 50px; QUESTION This command doesn't seem to work */
   }
   .content .center {
-    padding: 10% 30%;
-    margin: 0 auto;
+    position: fixed;
+    bottom: 10%;
+    padding: 0px;
+    position
+  }
+  span {
+    margin: 0px auto;
+    padding: 0 0 20px 0;
+  }
+  .footer {
+    position: absolute;
+    z-index: 100;
+    bottom: 4%;
+    width: 100%;
+    text-align: center;
+  }
+  .footer .img {
+    fill: #00003B;
+    width: 3%;
   }
 }

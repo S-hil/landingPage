@@ -1,0 +1,59 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #00003B;
+}
+
+.header {
+  text-align: center;
+  padding: 1rem;
+}
+
+.logo {
+  fill: #fff;
+  width: 90%;
+  height: 100px;
+}
+
+.seo {
+  position: absolute;
+  height: 0;
+  width: 0;
+  line-height: 0;
+  font-size: 0;
+  text-indent: -999%;
+}
+
+.footer {
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer .img {
+  padding: 2%;
+  width: 2%;
+  height: 7%;
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    background-color: #fff;
+  }
+  .logo {
+    fill: #00003B;
+    max-width: 20rem;
+  }
+  .content {
+    position: absolute;
+    bottom: 0;
+  }
+  .content .center {
+    padding: 10% 30%;
+    margin: 0 auto;
+  }
+}
