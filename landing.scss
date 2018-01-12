@@ -96,6 +96,7 @@ body {
   height:5rem;
   fill: white;
   margin: 10% 0;
+  -webkit-animation-delay:1s;
 }
 .footer .img:hover,.footer .img:active{
   fill :$violet;
@@ -162,5 +163,4 @@ body {
     opacity: 0.8;
 
   }
-
 }
